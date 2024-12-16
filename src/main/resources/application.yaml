@@ -1,0 +1,26 @@
+telegramm:
+  api_url: "https://api.telegram.org"
+  bot_name: "NoVoiceOnlyText_bot"
+  bot_token: "8154029724:AAGa7pfr7XhBBH_-kkUNadMf_elk0iE3_Hc"
+  server:
+    port: 5000
+  files:
+    incoming: "VoiceMessageToText"
+    outgoing: "TextMessageFromVoice"
+  ffmpeg:
+    path: "ffmpeg.exe"
+  shedule:
+    cron:
+      delete-temp-files: 0 */10 * ? * *
+  message:
+    start:
+      picture-file-id: "11.jpg"
+      picture-file-path: "C:\Users\User\Picture\"
+        text: "Добро пожаловать в чат-бот, который преобразовывает голос в текст (Не более 10-ти минут сообщение!)"
+      too-big-voice:
+        text: "Это слишком большое сообщение! Ну кто записывает голосовое больше 10-ти минут?!? Проще созвониться))"
+      illegal-message:
+        text: "Это не голосове сообщение, а нужно только голосовое!)"
+      wtf:
+        text: "O KURWA! Всё упало((("
+
